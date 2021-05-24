@@ -1,0 +1,338 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #181818;
+  color: white;
+}
+
+/*-----------------------------------main screen----------------------------------*/
+
+.App {
+  max-width: 800px;
+  align-items: center;
+  margin: auto;
+  min-height: 100vh;
+}
+
+/*------------------------------------header--------------------------------------*/
+
+header {
+  background-color: #202020;
+  color: white;
+  min-height: 50px;
+  width: 100%;
+  overflow: hidden;
+  justify-content: space-around;
+}
+header .logo{
+  flex: 1;
+}
+ul li {
+  list-style: none;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+header .header-content ul {
+  padding: 10px;
+  margin-top: 10px;
+}
+header ul li {
+  display: inline-block;
+  align-items: center;
+  margin: 0 18px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.header .logo {
+  margin: auto 20px;
+}
+.logo h2 i{
+  margin-right: 3px;
+}
+.header-content ul li{
+  cursor: pointer;
+}
+.header-content ul li i{
+  margin: 5px;
+}
+.logo a{
+  text-decoration: none;
+  color: white;
+}
+.menu{
+  display: none;
+}
+
+/*-----------------------------------login--------------------------------------*/
+
+.login {
+  color: white;
+  background-color: #202020;
+  padding: 30px;
+  max-width: 480px;
+  width: 95%;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 60px;
+}
+.login h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 30px;
+  font-weight: 500;
+  border-bottom: 1px solid #2d3033;
+  padding-bottom: 16px;
+}
+.login form {
+  width: 100%;
+}
+.login form button {
+  text-transform: uppercase;
+  background-color: #0b57bb;
+  border: #0b57bb;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}
+.login h6 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.login h6 a {
+  text-decoration: none;
+}
+
+/*-------------------------------------------error-----------------------------------------*/
+
+.error{
+  display: flex;
+  position: relative;
+  background-color: rgb(204, 92, 114);
+  max-width: 400px;
+  width: 95%;
+  text-align: left;
+  margin: auto;
+  justify-content: space-between;
+  padding: 5px;
+  align-items: center;
+  border-radius: 5px;
+}
+.error p{
+  padding-top: 18px;
+  text-transform: capitalize;
+  margin-left: 10px;
+}
+.error i{
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/*--------------------------------profile------------------------------------*/
+
+.profile{
+  max-width: 400px;
+  width: 95%;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #202020;
+  padding: 20px;
+}
+.profile i{
+  font-size: 100px;
+}
+.profile h3{
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.profile h4{
+  text-transform: uppercase;
+}
+.profile form button{
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/*-------------------------transaction-----------------------*/
+
+.transaction-box{
+  background-color: #202020;
+  max-width: 400px;
+  width: 95%;
+  margin: 20px auto;
+  padding: 10px 30px;
+}
+.transaction-box h3{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.transaction-box h2{
+  font-weight: 700;
+}
+.transaction-box h5{
+  text-align: center;
+  border-bottom: 1px solid #2d3033;
+  padding: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+.transaction-box .income-expense{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #2d3033;
+  width: 100%;
+  margin: 10px 0;
+  background-color: #181818;
+}
+.income{
+  width: 50%;
+  border-right: 1px solid #2d3033;
+  text-align: center;
+  margin: 10px 0;
+  color: green;
+}
+.income h4{
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.expense{
+  width: 50%;
+  text-align: center;
+  margin: 10px 0;
+  color: crimson;
+}
+.expense h4{
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/*-----------------------------history---------------------------------*/
+
+.list ul li{
+  padding: 5px 10px;
+  position: relative;
+  margin-bottom: -10px;
+  display: flex;
+  text-transform: capitalize;
+  justify-content: space-between;
+  background-color: #181818;
+}
+li i{
+  position: absolute;
+  top: 5px;
+  left: -35px;
+  border: 1px solid #2d3033;
+  color: crimson;
+  font-size: 22px;
+}
+.plus{
+  border-right: 3.5px solid green;
+}
+.minus{
+  border-right: 3.5px solid crimson;
+}
+
+/*---------------------------------transaction-----------------------------*/
+
+.transaction form input{
+  background-color: #181818;
+  border: none;
+  outline: none;
+  color: white;
+}
+.transaction form label{
+  text-transform: uppercase;
+}
+.transaction form button{
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: rgb(199, 137, 199);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/*------------------------------------footer----------------------------*/
+
+footer{
+  background-color: #202020;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+}
+footer a{
+  text-decoration: none;
+}
+
+/*----------------------------------resposive-------------------------------------------*/
+
+@media (max-width: 820px) {
+  header .logo {
+    min-width: 115px;
+    flex: none;
+  }
+  header ul {
+    padding: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  #by{
+    display: none;
+  }
+  header ul {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #181818;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0.98;
+    z-index: 99;
+    transition: 0.5s ease-in;
+  }
+  header .menu {
+    display: block;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 800;
+    padding-left: 10px;
+  }
+  .cross {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    font-size: 25px;
+    font-weight: 800;
+  }
+  header {
+    justify-content: space-between;
+  }
+  header .header-content ul {
+    padding: 0px;
+    margin-top: 0px;
+  }
+}
+
+.icon {
+  font-size: 25px;
+}
