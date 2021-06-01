@@ -20,7 +20,7 @@ function TransactionHistory({ transactions, deleteTransaction }) {
                 onClick={() => {
                   deleteTransaction(transaction._id);
                 }}
-                className="fas fa-times-circle"
+                className="fas fa-times-circle icon"
               ></i>
             </li>
           </ul>

@@ -232,7 +232,6 @@ li i{
   position: absolute;
   top: 5px;
   left: -35px;
-  border: 1px solid #2d3033;
   color: crimson;
   font-size: 22px;
 }
@@ -241,6 +240,13 @@ li i{
 }
 .minus{
   border-right: 3.5px solid crimson;
+}
+.icon{
+  opacity: 0;
+  transition: all 0.2s;
+}
+ul li:hover .icon{
+  opacity: 1;
 }
 
 /*---------------------------------transaction-----------------------------*/
