@@ -21,6 +21,7 @@ function MainScreen() {
             <Route path="/register" exact component={auth ? NotFound : Register} />
             <Route path="/dashboard" exact component={auth ? Dashboard : NotFound} />
             <Route path="/profile" exact component={auth ? Profile : NotFound} />
+            <Route path="*" exact component={NotFound} />
           </Switch>
         </div>
       </Router>
